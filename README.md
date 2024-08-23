@@ -1,0 +1,2 @@
+# LAMP-LEMP-STACK-REPO
+configure LAMP AND LEMPSTACK ON AWS EC2 instance
