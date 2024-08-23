@@ -13,3 +13,35 @@ Connect to Instance
 Open Terminal: On your local machine, open a terminal.
 Change Permissions: Run chmod 400 your-key-pair.pem to set the correct permissions for your key pair.
 SSH Command: Connect to your instance
+ssh -i "your-key-pair.pem" ubuntu@your-instance-public-dns
+
+3. Install Components
+Update Package Lists:
+sudo apt update
+
+Install Apache:
+sudo apt install apache2 -y
+
+Install MySQL:
+sudo apt install mysql-server -y
+
+Install PHP:
+sudo apt install php libapache2-mod-php php-mysql -y
+
+4. Start Services
+Start Apache:
+sudo systemctl start apache2
+
+Start MySQL:
+sudo systemctl start mysql
+
+5. Test LAMP Stack
+Create PHP Info File:
+sudo nano /var/www/html/info.php
+
+Add the following content:
+PHP
+
+<?php
+phpinfo();
+?>
