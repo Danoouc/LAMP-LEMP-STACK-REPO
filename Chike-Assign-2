@@ -1,0 +1,15 @@
+ Launch EC2 Instance
+Log in to AWS Console: Go to the AWS Management Console.
+Navigate to EC2: Search for “EC2” in the search bar and select it.
+Launch Instance: Click on “Launch Instance”.
+Choose AMI: Select “Ubuntu Server 20.04 LTS” from the list of available AMIs.
+Instance Type: Choose an instance type (e.g., t2.micro for free tier).
+Configure Instance: Set up the instance details, such as VPC, subnet, and auto-assign public IP.
+Add Storage: Configure storage as needed.
+Add Tags: Add tags for easier identification.
+Configure Security Group: Create a new security group or select an existing one. Allow SSH (port 22), HTTP (port 80), and HTTPS (port 443).
+Review and Launch: Review your settings and launch the instance. Download the key pair (.pem file) for SSH access.
+Connect to Instance
+Open Terminal: On your local machine, open a terminal.
+Change Permissions: Run chmod 400 your-key-pair.pem to set the correct permissions for your key pair.
+SSH Command: Connect to your instance
